@@ -1,0 +1,4 @@
+aws_ses_username: "AKIAJGGJ5RR3TM6CQ35Q"
+aws_ses_password: "AhJKzpYxPlzYhxSWWEbKVcctXBG02d2MmoyrFtEmSIn4"
+aws_ses_address: "email-smtp.us-west-2.amazonaws.com"
+aws_ses_mailer_sender: "thomasjacobjr@gmail.com"
