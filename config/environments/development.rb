@@ -19,7 +19,7 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     address: ENV["aws_ses_address"],
-    port: "",
+    port: "587",
     domain: "localhost:3000",
     user_name: ENV["aws_ses_username"],
     password: ENV["aws_ses_password"],
