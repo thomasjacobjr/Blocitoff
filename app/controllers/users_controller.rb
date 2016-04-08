@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
 
   def show
-    #byebug
+    @item = Item.new
   end
 
 end
