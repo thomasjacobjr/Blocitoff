@@ -11,7 +11,9 @@
       Signed in as: <strong><%= current_user.email %></strong>
       <!-- User should see all his/her items -->
       <%= render( {partial: "items/form", locals: {item: @item}} )%>
-      <%= render "items/item" %>
+      <ul>
+      <%= render partial: "items/item", collection: @items %>
+      </ul>
     </div>
   </div>
 </div>

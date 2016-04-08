@@ -14,4 +14,8 @@
  *= require_self
  */
  @import "bootstrap-sprockets";
- @import "bootstrap"
+ @import "bootstrap";
+
+ .flash {
+   padding-top: 50px;
+ }
