@@ -1,7 +1,8 @@
 class UsersController < ApplicationController
 
   def show
-    #byebug
+    @item = Item.new
+    @items = Item.where(user_id: current_user.id)
   end
 
 end

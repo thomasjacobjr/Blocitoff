@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
 
-  root "users#show"
-
   devise_for :users
 
-  resources :users, only: [:show]
+  resources :users, only: [:show] do
+    resources :items, only: [:create]
+  end
 
-  # TODO -- Figure out how to redirect signed in users directly to show page
+  root "users#show"
+
 end
