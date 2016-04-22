@@ -3,13 +3,6 @@ require 'random_data'
 N_ITEMS = 50
 N_USERS = 50
 
-# Create Wikis
-N_ITEMS.times do
-  Item.create!(
-    name: Faker::Hipster.sentence
-  )
-end
-
 # Create Users
 N_USERS.times do
   user = User.new(
@@ -19,6 +12,16 @@ N_USERS.times do
   user.skip_confirmation!
   user.save!
 end
+users = User.all
+
+# Create Items
+N_ITEMS.times do
+  Item.create!(
+    user: users.sample,
+    name: Faker::Hipster.sentence
+  )
+end
+
 
 # Create a default user
 user1 = User.new(email: "standard@test.com", password: "testtest")
