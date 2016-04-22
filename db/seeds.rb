@@ -21,15 +21,15 @@ N_USERS.times do
 end
 
 # Create a default user
-user1 = User.new(email: "standard@test.com", password: "testtest", role: 0)
+user1 = User.new(email: "standard@test.com", password: "testtest")
 user1.skip_confirmation!
 user1.save
 
-user2 = User.new(email: "premium@test.com", password: "testtest", role: 1)
+user2 = User.new(email: "premium@test.com", password: "testtest")
 user2.skip_confirmation!
 user2.save
 
-user3 = User.new(email: "admin@test.com", password: "testtest", role: 2)
+user3 = User.new(email: "admin@test.com", password: "testtest")
 user3.skip_confirmation!
 user3.save
 
