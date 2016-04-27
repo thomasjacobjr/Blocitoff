@@ -1,3 +1,5 @@
-<li id="item-<%= item.id %>"><%= item.name%>
+<li id="item-<%= item.id %>">
+<span class="item-name"><%= item.name%></span>
+<%= time_left(item)%>
 <%= link_to "",[item.user, item], method: :delete, class: 'glyphicon glyphicon-ok', remote: true %>
 </li>
